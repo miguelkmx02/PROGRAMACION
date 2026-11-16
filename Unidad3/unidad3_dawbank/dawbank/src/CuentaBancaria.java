@@ -27,7 +27,9 @@ public class CuentaBancaria {
         this.saldo = 0;
         this.numMovimientos = 0;
     }
-    public String getIban() {return iban;}
+    public String getIban() {
+        return iban;
+    }
 
     public String getTitular() {
         return titular;
