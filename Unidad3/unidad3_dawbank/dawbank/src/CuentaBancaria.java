@@ -1,3 +1,4 @@
+
 public class CuentaBancaria {
 
     private String iban;
@@ -24,7 +25,7 @@ public class CuentaBancaria {
         this.iban = iban;
         this.titular = titular;
         // Toda cuenta nueva empieza con 0 euros
-        this.saldo = 0;
+        this.saldo = 0.0;
         this.numMovimientos = 0;
     }
     public String getIban() {
@@ -75,7 +76,7 @@ public class CuentaBancaria {
      */
     public void retirar(double cantidad) {
         // Solo se puede retirar una cantidad mayor que cero
-        if (cantidad <= 0) {
+        if (cantidad <= 0.0) {
             throw new IllegalArgumentException("La cantidad debe ser mayor que cero");
         }
         // El saldo nunca puede quedar por debajo de -50

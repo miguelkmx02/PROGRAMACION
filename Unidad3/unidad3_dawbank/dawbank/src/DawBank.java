@@ -1,7 +1,7 @@
 // Permite usar el Scanner, que sirve para leer lo que el usuario escribe en el teclado
 import java.util.Scanner;
 
-public class DawBank {
+public class  DawBank {
 
     public static void main(String[] args) {
         // Crea el "oído" del programa: System.in es el teclado
